@@ -34,6 +34,7 @@ const server = http.createServer(function(request, response) {
     case '/html-file':
       response.writeHead(200, {'Content-Type': 'text/html'});
       response.write(html);
+      response.end();
       break;
   }
 });
